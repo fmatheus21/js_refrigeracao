@@ -1,29 +1,18 @@
-import { ScriptService } from './script.service';
+import { ScriptService } from './../../script.service';
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-slider',
+  templateUrl: './slider.component.html',
+  styleUrls: ['./slider.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'refrigeracao';
+export class SliderComponent implements OnInit {
 
-  constructor(private scriptService: ScriptService, private router: Router) { }
+  constructor(private scriptService: ScriptService) { }
 
-  ngOnInit() {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-      window.scrollTo(0, 10);
-    });
-
-   
-    this.scriptService.loadExternalScript('./assets/js/custom.js').then(() => { }).catch(() => { });
-
-    /*this.scriptService.loadExternalScript('./assets/js/jquery.min.js').then(() => { }).catch(() => { });
+  ngOnInit(): void {
+ 
+  /*  this.scriptService.loadExternalScript('./assets/js/jquery.min.js').then(() => { }).catch(() => { });
     this.scriptService.loadExternalScript('./assets/js/bootstrap.min.js').then(() => { }).catch(() => { });
     this.scriptService.loadExternalScript('./assets/js/owl.carousel.min.js').then(() => { }).catch(() => { });
     this.scriptService.loadExternalScript('./assets/js/jquery.magnific-popup.min.js').then(() => { }).catch(() => { });
@@ -31,7 +20,6 @@ export class AppComponent implements OnInit {
     this.scriptService.loadExternalScript('./assets/js/jquery.counterup.min.js').then(() => { }).catch(() => { });
     this.scriptService.loadExternalScript('./assets/js/custom-map.js').then(() => { }).catch(() => { });
     this.scriptService.loadExternalScript('./assets/js/custom.js').then(() => { }).catch(() => { });*/
-
 
   }
 

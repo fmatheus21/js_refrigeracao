@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "refrigeracao"
+    }
+  },
+  "defaultProject": "refrigeracao",
+  "cli": {
+    "analytics": false
+  }
 }
