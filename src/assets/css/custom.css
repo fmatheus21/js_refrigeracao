@@ -1,3 +1,11 @@
 .feature_service_box_width:hover svg path {
     fill: #38373C;
 }
+
+.service_box {
+    min-height: 500px;
+}
+
+.testimonial_area .testimonial_heading_shape {
+    bottom: -5%;
+}
