@@ -7,7 +7,7 @@ import { ServiceComponent } from './service/service.component';
 import { EstimateComponent } from './estimate/estimate.component';
 import { NumberComponent } from './number/number.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -21,7 +21,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     EstimateComponent,
     NumberComponent,
     GalleryComponent,
-    TestimonialComponent],
+    ContactComponent],
   imports: [
     CommonModule
   ],
@@ -33,7 +33,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     EstimateComponent,
     NumberComponent,
     GalleryComponent,
-    TestimonialComponent
+    ContactComponent
   ]
 })
 export class PublicModule { }

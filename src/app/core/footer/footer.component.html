@@ -1,0 +1,96 @@
+<footer class="footer_area">
+    <div class="footer_contact text-center">
+        <div class="container">
+
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width text-left">
+                    <p><i class="icon-placeholder"></i> Rio de Janeiro <span></span></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width">
+                    <p>
+                        <i class="icon-contact"></i> Email <span>
+                        <a href="mailto:contact@domain.com">contact@domain</a>
+                    </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width text-right">
+                    <p>
+                        <i class="icon-clock"></i>Atendimento
+                        <span>
+                        <a>Seg-Sab: 9:00 - 18:00</a>
+                    </span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer_content section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer_textwidget textwidget">
+                        <h2>Sobre a A&J Refrigeração</h2>
+                        <p>
+                            Somos uma empresa especializada em instalação e manutenção de aparelhos de refrigeração.
+                        </p>
+                        <h4>Contato</h4>
+                        <span class="number">(21) 98954-6934</span>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3">
+                    <h2>Menu</h2>
+                    <ul class="footer_link">
+                        <li>
+                            <a [routerLink]="['/home']" [routerLinkActive]="['current']" [routerLinkActiveOptions]="{ exact: true }">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLinkActive]="['current']" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/']" [fragment]="'about'">
+                                <span>Sobre</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLinkActive]="['current']" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/']" [fragment]="'service'">
+                                <span>Serviços</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLinkActive]="['current']" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/']" [fragment]="'contact'">
+                                <span>Contato</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright_area">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 copyright_text">
+                        <p id="copyright"></p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 copyright_social text-right">
+                        <ul>
+                            <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="./assets/images/shape/footer-shape.png" class="footer_shape" alt="footer shape">
+
+</footer>

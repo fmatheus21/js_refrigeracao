@@ -28,7 +28,7 @@
 
 
 
-    <script src="./assets/js/jquery.min.js"></script>
+    <!-- <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/jquery.magnific-popup.min.js"></script>
@@ -36,9 +36,19 @@
     <script src="./assets/js/jquery.counterup.min.js"></script>
     <script src="./assets/js/custom-map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Agsvf36du-7l_mp8iu1a-rXoKcWfs2I"></script>
-    <!--<script src="./assets/js/custom.js"></script>-->
+    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/send-email.js"></script>-->
 
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Agsvf36du-7l_mp8iu1a-rXoKcWfs2I"></script>-->
+
+    <script type="text/javascript">
+        window.addEventListener("load", function(event) {
+            var year = new Date().getFullYear();
+            var text = '&copy; 2020 - ' + year;
+            var copyright = ` Developed by <a target="_blank" rel="nofollow" href="https://firecodesystems.com">Firecode Systems</a>`;
+            document.getElementById("copyright").innerHTML = text + copyright;
+        });
+    </script>
+
 
 </body>
 

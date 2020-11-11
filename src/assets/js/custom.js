@@ -19,7 +19,7 @@
     11: Video Promotion
 */
 
-(function ($) {
+(function($) {
     'use strict';
 
     /*** =====================================
@@ -40,21 +40,21 @@
     /*** =====================================
      * PreLoader
      * =====================================***/
-    $(window).on('load', function(){
+    $(window).on('load', function() {
         $('.preloader').delay('500').fadeOut(2000);
     });
 
 
-    $(document).on('ready', function () {
+    $(document).on('ready', function() {
         /*** =====================================
          * Toogle Nav Menu
          * =====================================***/
-        $(document).on('click', '.main_menu_area button.navbar-toggles', function () {
+        $(document).on('click', '.main_menu_area button.navbar-toggles', function() {
             $('.main_menu_area .collapse_responsive').toggleClass('collapse_active');
             $('.main_menu_area button.navbar-toggles').toggleClass('navbar_close');
         });
 
-        $(document).on('click','.main_menu_area .navbar-nav li > span.responsive_menu:not(:only-child)', function (e) {
+        $(document).on('click', '.main_menu_area .navbar-nav li > span.responsive_menu:not(:only-child)', function(e) {
             $(this).siblings('.dropdown-menu').toggle();
             $('.dropdown-menu').not($(this).siblings()).hide();
             e.stopPropagation();
@@ -64,10 +64,10 @@
         /*** =====================================
          * Service Single tabs
          * =====================================***/
-         $(document).on('click', '.service_class_remove .nav-tabs li', function () {
-             $(".service_cool_head .nav-tabs li").removeClass('active');
-         });
-        $(document).on('click', '.service_cool_head .nav-tabs li', function () {
+        $(document).on('click', '.service_class_remove .nav-tabs li', function() {
+            $(".service_cool_head .nav-tabs li").removeClass('active');
+        });
+        $(document).on('click', '.service_cool_head .nav-tabs li', function() {
             $(".service_class_remove .nav-tabs li").removeClass('active');
         });
 
@@ -75,10 +75,10 @@
         /*** =====================================
          * CounterUP
          * =====================================***/
-        $('.counter').counterUp({
+        /*$('.counter').counterUp({
             delay: 10,
             time: 3000
-        });
+        });*/
 
 
         /*** =====================================
@@ -146,7 +146,7 @@
             midClick: true
         });
 
-        $('.mfp-close-btn-in').on('click', function () {
+        $('.mfp-close-btn-in').on('click', function() {
             $('#videostore').hide();
         });
 

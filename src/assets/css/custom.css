@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    /* efeito deslizante */
+}
+
 .feature_service_box_width:hover svg path {
     fill: #38373C;
 }
@@ -8,4 +13,53 @@
 
 .testimonial_area .testimonial_heading_shape {
     bottom: -5%;
+}
+
+.current {
+    color: #09aeb8 !important;
+}
+
+.section_padding {
+    padding: 200px 0;
+}
+
+#contact {
+    background: #f1f1f1;
+}
+
+.copyright_social ul li,
+.header_social .hd_social_icons li {
+    padding: 0 5px;
+}
+
+.contact-background {
+    background-image: url('../images/shape/about-shape.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+
+.gallery_area {
+    padding: 150px 0 0 0;
+}
+
+.contact-right textarea {
+    padding: 17px 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #87868a;
+}
+
+textarea {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+}
+
+.swal2-popup .swal2-content {
+    font-size: 16px !important;
+}
+
+.swal2-popup {
+    width: 40em !important;
 }

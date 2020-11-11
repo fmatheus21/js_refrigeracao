@@ -1,4 +1,4 @@
-<section class="service_area section_padding">
+<section id="service" class="service_area section_padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -8,62 +8,25 @@
 
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6" *ngFor="let service of services">
                 <div class="service_box">
                     <div class="service_img">
-                        <img src="assets/images/services/service-1.jpg" alt="service 1">
+                        <img [src]="service.image" alt="service">
                         <div class="icon-box">
-                            <i class="icon-snow"></i>
+                            <i [attr.class]="service.icon"></i>
                         </div>
                     </div>
                     <div class="service_details">
-                        <a href="service-details.html">
-                            <h2>Refrigerador</h2>
+                        <a>
+                            <h2>{{service.title}}</h2>
                         </a>
                         <p>
-                            Trabalhamos com manutenção de geladeiras de todas as marcas e modelos.
+                            {{service.description}}
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
-                <div class="service_box">
-                    <div class="service_img">
-                        <img src="assets/images/services/service-2.jpg" alt="service 2">
-                        <div class="icon-box">
-                            <i class="icon-snow"></i>
-                        </div>
-                    </div>
-                    <div class="service_details">
-                        <a href="service-details.html">
-                            <h2>Freezer e Expositora</h2>
-                        </a>
-                        <p>
-                            Consertamos todo tipo de Freezer, Expositoras e Balcão Frio.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-                <div class="service_box">
-                    <div class="service_img">
-                        <img src="assets/images/services/service-3.jpg" alt="service 3">
-                        <div class="icon-box">
-                            <i class="icon-ac"></i>
-                        </div>
-                    </div>
-                    <div class="service_details">
-                        <a href="service-details.html">
-                            <h2>Ar Condicionado</h2>
-                        </a>
-                        <p>
-                            Realizamos instalação e manutenção de ar condicionado de odas as marcas e modelos.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>

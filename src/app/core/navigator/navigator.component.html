@@ -7,8 +7,8 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-                <a href="index-2.html" class="logo">
-                    <img src="assets/images/logo.png" alt="Logo">
+                <a [routerLink]="['/home']" class="logo">
+                    <img src="./assets/images/logo.png" alt="Logo">
                 </a>
             </div>
 
@@ -16,24 +16,27 @@
                 <div class="collapse navbar-collapse remove_padding" id="myNavbar">
                     <ul class="nav navbar-nav text-center">
                         <li>
-                            <a href="index-2.html">Home <i class="fa fa-angle-down"></i></a> <span class="responsive_menu"><i class="fa fa-angle-down"></i></span>
-                            <ul class="dropdown-menu dropdown-menu-responsive">
-                                <li><a href="index-2.html">Home 01</a></li>
-                                <li><a href="home-2.html">Home 02</a></li>
-                            </ul>
+                            <a [routerLink]="['/home']" [routerLinkActive]="['current']" [routerLinkActiveOptions]="{ exact: true }">
+                                <span>Home</span>
+                            </a>
                         </li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Services</a></li>
                         <li>
-                            <a href="blog.html">Blog <i class="fa fa-angle-down"></i></a> <span class="responsive_menu"><i class="fa fa-angle-down"></i></span>
-                            <ul class="dropdown-menu dropdown-menu-responsive2">
-                                <li><a href="blog.html">Blog Grid</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
+                            <a [routerLinkActive]="['current']" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/']" [fragment]="'about'">
+                                <span>Sobre</span>
+                            </a>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a [routerLinkActive]="['current']" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/']" [fragment]="'service'">
+                                <span>Serviços</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLinkActive]="['current']" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/']" [fragment]="'contact'">
+                                <span>Contato</span>
+                            </a>
+                        </li>
                         <li class="header_right_btn">
-                            <a class="btn-yellow" href="#">BOOK TODAY</a>
+                            <a class="btn-yellow" href="https://api.whatsapp.com/send?phone=5521989546934&text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento!" target="_blank">ORÇAMENTO</a>
                         </li>
                     </ul>
                 </div>

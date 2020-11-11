@@ -1,49 +1,9 @@
 <section class="gallery_area">
-    <div class="gallery_width">
+    <div class="gallery_width" *ngFor="let gall of gallery">
         <div class="gallery_fixed_height">
-            <img src="assets/images/gallery/gallery-1.jpg" alt="gallery 1">
+            <img [src]="gall.image" alt="gallery 1">
             <div class="gallery_overlay">
-                <h3>Manutenção e Reparo</h3>
-            </div>
-        </div>
-    </div>
-    <div class="gallery_width">
-        <div class="gallery_fixed_height">
-            <img src="assets/images/gallery/gallery-2.jpg" alt="gallery 2">
-            <div class="gallery_overlay">
-                <h3>Manutenção e Reparo</h3>
-            </div>
-        </div>
-    </div>
-    <div class="gallery_width">
-        <div class="gallery_fixed_height">
-            <img src="assets/images/gallery/gallery-3.jpg" alt="gallery 3">
-            <div class="gallery_overlay">
-                <h3>Manutenção e Reparo</h3>
-            </div>
-        </div>
-    </div>
-    <div class="gallery_width">
-        <div class="gallery_fixed_height">
-            <img src="assets/images/gallery/gallery-4.jpg" alt="gallery 4">
-            <div class="gallery_overlay">
-                <h3>Manutenção e Reparo</h3>
-            </div>
-        </div>
-    </div>
-    <div class="gallery_width">
-        <div class="gallery_fixed_height">
-            <img src="assets/images/gallery/gallery-5.jpg" alt="gallery 5">
-            <div class="gallery_overlay">
-                <h3>Manutenção e Reparo</h3>
-            </div>
-        </div>
-    </div>
-    <div class="gallery_width">
-        <div class="gallery_fixed_height">
-            <img src="assets/images/gallery/gallery-6.jpg" alt="gallery 6">
-            <div class="gallery_overlay">
-                <h3>Manutenção e Reparo</h3>
+                <h3>{{gall.title}}</h3>
             </div>
         </div>
     </div>
