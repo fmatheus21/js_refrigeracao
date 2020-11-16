@@ -84,23 +84,25 @@
         /*** =====================================
          * Home v1 Header Slider
          * =====================================***/
-        $('.header_slider_area').owlCarousel({
-            items: 1,
-            autoHeight: true,
-            autoplay: true,
-            loop: true,
-            nav: false,
-            dots: true,
-            slideSpeed: 300,
-            animateIn: 'slideInLeft',
-            animateOut: 'fadeOutRight',
-            autoplayTimeout: 7000,
-        });
+        /* TODO */
+        /* $('.header_slider_area').owlCarousel({
+             items: 1,
+             autoHeight: true,
+             autoplay: true,
+             loop: true,
+             nav: false,
+             dots: true,
+             slideSpeed: 300,
+             animateIn: 'slideInLeft',
+             animateOut: 'fadeOutRight',
+             autoplayTimeout: 7000,
+         });*/
 
         /*** =====================================
          * Testimonial Slider
          * =====================================***/
-        $('.testimonial_slider').owlCarousel({
+        /* TODO */
+        /*$('.testimonial_slider').owlCarousel({
             items: 1,
             autoHeight: true,
             autoplay: true,
@@ -112,7 +114,7 @@
             thumbsPrerendered: true,
             animateOut: 'slideOutDown',
             animateIn: 'slideInDown'
-        });
+        });*/
 
         /*** =====================================
          * Clients Logos Slider
